@@ -17,7 +17,7 @@
 O **SmartStop Elevator Simulator** é um simulador avançado de controle de elevadores desenvolvido em **C** utilizando o **Raspberry Pi Pico W (BitDogLab)**.  
 O objetivo é reproduzir a lógica real de despacho de elevadores modernos, priorizando **eficiência, tempo de espera e fluxo de passageiros**.
 
-Este projeto implementa um algoritmo inspirado em sistemas reais de controle (Otis, Schindler, ThyssenKrupp), incluindo:
+Este projeto implementa um algoritmo inspirado em sistemas reais de controle, incluindo:
 
 - Atender quem espera *há mais tempo*  
 - Reduzir paradas desnecessárias  
