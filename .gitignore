@@ -1,0 +1,41 @@
+# Diretórios de build
+build/
+out/
+bin/
+obj/
+
+# Arquivos compilados
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+*.uf2
+*.map
+
+# Arquivos de log
+*.log
+
+# VSCode / JetBrains
+.vscode/
+.idea/
+
+# Arquivos do CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Arquivos temporários
+*.swp
+*.swo
+*~
+*.tmp
+
+# Sistema operacional
+Thumbs.db
+.DS_Store
+
+# Python (caso use scripts auxiliares)
+__pycache__/
+*.pyc
