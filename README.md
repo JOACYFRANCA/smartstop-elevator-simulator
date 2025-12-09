@@ -176,7 +176,7 @@ Chamadas ativas:
 - Suporte a múltiplos elevadores em grupo  
 
 ---
-Análise de Logs e Geração de Relatórios (Ferramenta de Qualidade)
+##  Análise de logs e Geração de Relatórios (Ferramenta de Qualidade)
 
 O SmartStop agora conta com uma ferramenta opcional para análise de logs da simulação, permitindo transformar os dados brutos do terminal em tabelas, relatórios e métricas de operação.
 
