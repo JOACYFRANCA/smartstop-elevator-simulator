@@ -176,7 +176,59 @@ Chamadas ativas:
 - Suporte a múltiplos elevadores em grupo  
 
 ---
+Análise de Logs e Geração de Relatórios (Ferramenta de Qualidade)
 
+O SmartStop agora conta com uma ferramenta opcional para análise de logs da simulação, permitindo transformar os dados brutos do terminal em tabelas, relatórios e métricas de operação.
+
+A ferramenta está localizada em:
+tools/analisar_smartstop.py
+
+Como funciona
+
+1- Execute a simulação normalmente pelo Serial (VS Code, PuTTY ou outro).
+
+2- Ative o recurso Logging da ferramenta escolhida e salve o log como, por exemplo:
+smartstop_log.txt
+
+3- em seu computador, execute:
+python tools/analisar_smartstop.py
+
+Resultados gerados automaticamente
+
+Após processar os logs, o script cria:
+
+             Arquivo                                           Conteúdo                                   
+  ------------------------------------          ------------------------------------------ 
+  `*_data.csv`                                  Dados estruturados, prontos para Excel     
+  `*_data.xlsx`                                 Planilha com tabelas organizadas           
+  `*_summary.txt`                               Resumo com métricas de qualidade           
+  `smartstop_consolidated_summary.txt`          Consolidação de múltiplos logs (se houver) 
+  
+  
+Métricas extraídas
+
+1. Ocupação média por ciclo
+
+2. Tempo de espera por andar
+
+3. Ciclos críticos (emergência / alta espera)
+
+4. Andares mais movimentados
+
+5. Eficiência de cada decisão
+
+6. Número de paradas ignoradas / justificativas
+
+7.Análise de SmartStop (quando evitou ou quando não deveria evitar)
+
+Objetivo
+
+Esta ferramenta permite avaliar:
+
+Qualidade operacional, Riscos e comportamentos críticos, Eficiência da lógica SmartStop, Padrões de atendimento e, Comparação entre diferentes simulações
+
+É um recurso essencial para estudo de qualidade, segurança e análise de riscoem em transporte vertical.
+---
 ##  Autor
 
 **Joacy Raimundo França**  
