@@ -39,3 +39,10 @@ Thumbs.db
 # Python (caso use scripts auxiliares)
 __pycache__/
 *.pyc
+# Arquivos de log e saídas geradas pela análise
+*.txt
+*.csv
+*.xlsx
+
+# Exceto arquivos de código
+!tools/*.py
